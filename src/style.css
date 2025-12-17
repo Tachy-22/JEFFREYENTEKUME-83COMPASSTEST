@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-figma-orange: #E75425;
+  --color-figma-orange-border: #D24417;
+  --color-figma-gray: #CFCFCF;
+  --color-figma-dark: #0D0F11;
+  
+  --font-family-roboto: 'Roboto', sans-serif;
+  --font-family-lato: 'Lato', sans-serif;
+  --font-family-open-sans: 'Open Sans', sans-serif;
+  --font-family-inter: 'Inter', sans-serif;
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  
+  --background-image-figma-gradient: linear-gradient(186.35deg, rgba(231, 84, 37, 0.63) -163.44%, #0D0F11 94.99%);
+  
+  /* Dashboard specific colors */
+  --color-dashboard-dark: #08090B;
+  --color-dashboard-card: #1C1D1E;
+  --color-dashboard-card-content: #333030;
+  --color-dashboard-sidebar: #1C1D1E;
+  --color-dashboard-sidebar-border: rgba(176, 190, 197, 0.47);
+  --color-dashboard-text-primary: #FFFFFF;
+  --color-dashboard-text-secondary: #BAB8B8;
+  --color-dashboard-text-muted: #CFCFCF;
+  --color-dashboard-accent: #EB7149;
+  --color-dashboard-celebration: #404040;
+}
