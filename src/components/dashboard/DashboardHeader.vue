@@ -36,7 +36,7 @@
               <!-- Avatar or Initials -->
               <div class="w-8 h-8 sm:w-10 sm:h-11 rounded-full overflow-hidden">
                 <img
-                  src="/src/assets/images/avatar.png"
+                  src="/images/avatar.png"
                   :alt="userStore.fullName"
                   class="w-full h-full object-cover"
                 />

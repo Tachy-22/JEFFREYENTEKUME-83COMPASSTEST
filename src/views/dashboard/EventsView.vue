@@ -168,7 +168,7 @@ const transformEvent = (event: Event) => {
     description: event.description,
     day,
     dayName,
-    image: event.image || '/src/assets/images/auth-background.avif',
+    image: event.image || '/images/auth-background.avif',
     canRegister: event.status === 'upcoming'
   }
 }

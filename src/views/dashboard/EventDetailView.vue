@@ -36,7 +36,7 @@
           <!-- Event Hero Image -->
           <div class="relative w-full h-40 sm:h-48 lg:h-[188.25px] bg-gray-800 rounded-t-[1.5px] overflow-hidden">
             <img 
-              :src="event?.image || '/src/assets/images/auth-background.avif'" 
+              :src="event?.image || '/images/auth-background.avif'" 
               :alt="event?.title"
               class="w-full h-full object-cover"
             />
@@ -206,7 +206,7 @@ const event = computed(() => {
     type: apiEvent.value.eventType,
     location: 'Office Lounge', // Default location since not in API
     department: 'All Department', // Default department since not in API
-    image: apiEvent.value.image || '/src/assets/images/auth-background.avif',
+    image: apiEvent.value.image || '/images/auth-background.avif',
     fullDescription: apiEvent.value.description
   }
 })
