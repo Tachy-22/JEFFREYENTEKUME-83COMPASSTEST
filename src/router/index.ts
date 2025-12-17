@@ -53,7 +53,12 @@ const router = createRouter({
         //   path: 'news',
         //   name: 'News',
         //   component: () => import('@/views/dashboard/NewsView.vue')
-        // }
+        // },
+        {
+          path: ':pathMatch(.*)*',
+          name: 'DashboardNotFound',
+          component: () => import('@/views/dashboard/NotFoundView.vue')
+        }
       ]
     },
     // {
