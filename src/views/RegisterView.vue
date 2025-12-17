@@ -121,7 +121,7 @@ const handleRegister = async () => {
   <!-- Main Container with Background -->
   <div 
     class="min-h-screen w-full flex items-center justify-center p-4 relative bg-cover bg-center bg-no-repeat"
-    style="background-image: url('/src/assets/images/auth-background.avif');"
+    style="background-image: url('/src/assets/images/auth-background.png');"
   >
     <!-- Background Gradient Overlay -->
     <div class="absolute inset-0 bg-figma-gradient"></div>
