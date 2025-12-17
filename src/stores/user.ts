@@ -11,13 +11,13 @@ export const useUserStore = defineStore('user', () => {
   const isAuthenticated = computed(() => !!user.value && !!getAuthToken())
 
   const fetchCurrentUser = async () => {
-    console.log('fetchCurrentUser called')
+    //console.log('fetchCurrentUser called')
     const token = getAuthToken()
-    console.log('Token exists:', !!token)
+    //console.log('Token exists:', !!token)
     
     if (!token) {
       error.value = 'No authentication token found'
-      console.log('No token found, aborting')
+      //console.log('No token found, aborting')
       return
     }
 
@@ -25,16 +25,16 @@ export const useUserStore = defineStore('user', () => {
     error.value = null
 
     try {
-      console.log('Making API call to get current user...')
+      //console.log('Making API call to get current user...')
       const response = await getCurrentUser()
-      console.log('API response:', response)
+      //console.log('API response:', response)
       user.value = response.data
-      console.log('User set to:', user.value)
+      //console.log('User set to:', user.value)
     } catch (err: unknown) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to fetch user data'
       error.value = errorMessage
-      console.error('Failed to fetch current user:', err)
-      console.error('Error details:', err)
+      //console.error('Failed to fetch current user:', err)
+      //console.error('Error details:', err)
     } finally {
       isLoading.value = false
     }

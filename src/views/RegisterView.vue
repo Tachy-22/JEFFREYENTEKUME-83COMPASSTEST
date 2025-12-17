@@ -112,7 +112,7 @@ const handleRegister = async () => {
       position: 'top-right',
       autoClose: 4000,
     })
-    console.error('Registration failed:', error)
+   // console.error('Registration failed:', error)
   }
 }
 </script>

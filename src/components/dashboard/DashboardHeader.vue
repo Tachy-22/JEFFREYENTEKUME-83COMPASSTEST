@@ -75,23 +75,23 @@ import { getAuthToken } from '@/lib/api-client'
 const userStore = useUserStore()
 
 onMounted(async () => {
-  console.log('Header mounted, fetching user data...')
-  console.log('Current user:', userStore.user)
-  console.log('Has token:', !!getAuthToken())
+  //console.log('Header mounted, fetching user data...')
+  //console.log('Current user:', userStore.user)
+  //console.log('Has token:', !!getAuthToken())
   
   // Fetch user data when component mounts
   await userStore.fetchCurrentUser()
   
-  console.log('After fetch - user:', userStore.user)
-  console.log('After fetch - error:', userStore.error)
+  //console.log('After fetch - user:', userStore.user)
+  //console.log('After fetch - error:', userStore.error)
 })
 
 // Watch for user changes
 watch(() => userStore.user, (newUser) => {
-  console.log('User changed:', newUser)
+  //console.log('User changed:', newUser)
 }, { deep: true })
 
 watch(() => userStore.error, (newError) => {
-  console.log('User store error:', newError)
+  //console.log('User store error:', newError)
 })
 </script>

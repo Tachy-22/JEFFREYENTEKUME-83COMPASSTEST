@@ -220,12 +220,12 @@ const handleEventRegister = (eventId: string | number) => {
     },
     onError: (error: unknown) => {
       toast.error('Failed to register for event')
-      console.error('Failed to register for event:', error)
+     // console.error('Failed to register for event:', error)
     }
   })
 }
 
 const handleFilterChange = (option: { label: string; value: string | number }) => {
-  console.log('Filter changed:', option)
+  console.log('.')
 }
 </script>
