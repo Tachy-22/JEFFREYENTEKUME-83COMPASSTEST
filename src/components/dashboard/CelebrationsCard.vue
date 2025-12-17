@@ -65,7 +65,7 @@ const celebrations = ref<Celebration[]>([
     department: 'Finance Dept',
     occasion: 'Birthday',
     date: '20 Sep',
-    avatar: '/src/assets/images/person1.png',
+    avatar: '/images/person1.png',
     icon: Cake
   },
   {
@@ -74,7 +74,7 @@ const celebrations = ref<Celebration[]>([
     department: 'Finance Dept',
     occasion: '10 years anniversary',
     date: '21 Sep',
-    avatar: '/src/assets/images/person3.png',
+    avatar: '/images/person3.png',
     icon: PartyPopper
   },
   {
@@ -83,7 +83,7 @@ const celebrations = ref<Celebration[]>([
     department: 'Tech Dept',
     occasion: 'Promotion',
     date: '29 Sep',
-    avatar: '/src/assets/images/person2.png',
+    avatar: '/images/person2.png',
     icon: PartyPopper
   }
 ])
